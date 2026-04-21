@@ -1,7 +1,12 @@
 # AmGANet: Attribute-Modulated Geometric Alignment Attention for Language-Guided Medical Image Segmentation
+Official implementation of **AmGANet**.
 
-Official implementation of **AmGANet**, proposed in our paper:  
-**Attribute-Modulated Geometric Alignment Attention for Language-Guided Medical Image Segmentation**
+> **Manuscript status**  
+> This work is currently **under review** at *Information Fusion*.
+
+
+> **Publication note**  
+> If the manuscript is accepted for publication, this repository and any related materials will be updated to reflect the final publication information and applicable sharing policies.
 
 ## Overview
 ![main figure](assets\3D.png)
@@ -20,41 +25,45 @@ Official implementation of **AmGANet**, proposed in our paper:
 4) **Synergistic Semantic Decoding Block (SSD)** bridges the modality gap between semantics and vision. Through a layer-wise anchoring and bidirectional refinement strategy, it progressively refines semantic and spatial feature representations, deeply mining implicit correlations beyond independent modalities.
 
 
+
 ## Requirements
-Python == 3.10.18 and install from the ```requirements.txt``` using:
-```angular2html
+
+This project is tested with the following environment:
+
+- Python 3.10.18
+- torch==2.0.1+cu118
+- torchvision==0.15.2+cu118
+
+Install the required dependencies with:
+
+```bash
 pip install -r requirements.txt
 ```
-Questions about NumPy version conflict. The NumPy version we use is 1.17.5. We can install bert-embedding first, and install NumPy then.
 
+Then downgrade `setuptools` to version `59.5.0` by uninstalling the default `setuptools==82.0.1` included in Python 3.10.18:
+
+```bash
+pip uninstall -y setuptools
+pip install setuptools==59.5.0
+```
 
 ## Usage
 
 ### 1. Data Preparation
-#### 1.1. QaTa-COV19, MosMedData+ and MoNuSeg Datasets (demo dataset)
-The original data can be downloaded in following links:
-* QaTa-COV19 Dataset - [Link (Original)](https://www.kaggle.com/datasets/aysendegerli/qatacov19-dataset)
 
-* MosMedData+ Dataset - [Link (Original)](http://medicalsegmentation.com/covid19/) or [Kaggle](https://www.kaggle.com/datasets/maedemaftouni/covid19-ct-scan-lesion-segmentation-dataset)
+#### 1.1. QaTa-COV19, MosMedData+, and MoNuSeg Datasets (demo dataset)
 
-* BUSI Dataset - [Link (Original)](http://medicalsegmentation.com/covid19/) or [Kaggle](https://www.kaggle.com/datasets/maedemaftouni/covid19-ct-scan-lesion-segmentation-dataset)
+The original data can be downloaded from the following links:
 
-* Kvasir-seg Dataset - [Link (Original)](http://medicalsegmentation.com/covid19/) or [Kaggle](https://www.kaggle.com/datasets/maedemaftouni/covid19-ct-scan-lesion-segmentation-dataset)
+- QaTa-COV19 Dataset and paired text reports - [Link](https://github.com/HUANGLIZI/LViT)
+- MosMedData+ Dataset and paired text reports - [Link](https://github.com/HUANGLIZI/LViT)
+- BUSI Dataset and paired text reports - [Link](https://tahakoleilat.github.io/MedCLIPSeg/)
+- Kvasir-seg Dataset and paired text reports - [Link](https://tahakoleilat.github.io/MedCLIPSeg/)
 
+The paired text reports for the **MosMedData+** and **QaTa-COV19** datasets were provided by **LViT** - [Original Link](https://github.com/HUANGLIZI/LViT).
 
-The text annotation of QaTa-COV19 has been released!
+The paired text reports for the **BUSI** and **Kvasir-seg** datasets were provided by **MedCLIPSeg** - [Original Link](https://tahakoleilat.github.io/MedCLIPSeg/).
 
-  *(Note: The text annotation of QaTa-COV19 train and val datasets [download link](https://1drv.ms/x/s!AihndoV8PhTDkm5jsTw5dX_RpuRr?e=uaZq6W).
-  The partition of train set and val set of QaTa-COV19 dataset [download link](https://1drv.ms/f/c/c3143e7c85766728/QihndoV8PhQggMO2rwAAAAAADo5kj33mUee33g).
-  The text annotation of QaTa-COV19 test dataset [download link](https://1drv.ms/x/s!AihndoV8PhTDkj1vvvLt2jDCHqiM?e=954uDF).)*
-
-  ***(Note: The contrastive label is available in the repo.)***
-  
-***(Note: The text annotation of MosMedData+ train dataset [download link](https://1drv.ms/x/s!AihndoV8PhTDguIIKCRfYB9Z0NL8Dw?e=8rj6rY).
-The text annotation of MosMedData+ val dataset [download link](https://1drv.ms/x/c/c3143e7c85766728/QShndoV8PhQggMMGsQAAAAAAtAgZiRQFYfsAjw).
-The text annotation of MosMedData+ test dataset [download link](https://1drv.ms/x/c/c3143e7c85766728/QShndoV8PhQggMMHsQAAAAAAdHkwXMxGlgU9Tg).)***
-  
-  *If you use the datasets provided by us, please cite the LViT.*
 
 #### 1.2. Format Preparation
 
@@ -65,29 +74,29 @@ Then prepare the datasets in the following format for easy use of the code:
     ├── QaTa-Covid19
     │   ├── Test_Folder
     |   |   ├── Test_text.xlsx
-    │   │   ├── img
-    │   │   └── labelcol
+    │   │   ├── images
+    │   │   └── labels
     │   ├── Train_Folder
     |   |   ├── Train_text.xlsx
-    │   │   ├── img
-    │   │   └── labelcol
+    │   │   ├── images
+    │   │   └── labels
     │   └── Val_Folder
     |	    ├── Val_text.xlsx
-    │       ├── img
-    │       └── labelcol
+    │       ├── images
+    │       └── labels
     └── MosMedDataPlus
         ├── Test_Folder
         |   ├── Test_text.xlsx
-        │   ├── img
-        │   └── labelcol
+        │   ├── images
+        │   └── labels
         ├── Train_Folder
         |   ├── Train_text.xlsx
-        │   ├── img
-        │   └── labelcol
+        │   ├── images
+        │   └── labels
         └── Val_Folder
             ├── Val_text.xlsx
-            ├── img
-            └── labelcol
+            ├── images
+            └── labels
 ```
 
 
@@ -95,15 +104,18 @@ Then prepare the datasets in the following format for easy use of the code:
 
 ### 2.1. Training
 
-```angular2html
-python train_model.py
-```
+For the QaTa-COV19 and MosMedData+ datasets, run:
+python Train_convid19/train_covid19.py
+
+For the BUSI and Kvasir-SEG datasets, run:
+python Train_BUSI_KVASIR/train_model_BUSI.py
 
 
 ### 3. Evaluation
 
 #### 3.1. Test the Model and Visualize the Segmentation Results
-First, change the session name in ```Config.py``` as the training phase. Then run:
-```angular2html
-python test_model.py
-``` 
+For the QaTa-COV19 and MosMedData+ datasets, run:
+python Train_convid19/test_covid19.py
+
+For the BUSI and Kvasir-SEG datasets, run:
+python Train_BUSI_KVASIR/test_model_BUSI.py
