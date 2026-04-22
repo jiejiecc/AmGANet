@@ -25,7 +25,7 @@ early_stopping_patience = 100
 pretrain = False
 # task_name = 'BUSI' 
 task_name = 'Kvasir'
-learning_rate = 3e-4  
+learning_rate = 3e-4  # or 1e-4
 batch_size = 24  
 
 
