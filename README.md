@@ -119,3 +119,11 @@ python Train_convid19/test_covid19.py
 
 For the BUSI and Kvasir-SEG datasets, run:
 python Train_BUSI_KVASIR/test_model_BUSI.py
+
+### 4. Pretrained Weights
+
+The pretrained weights for **AmGANet** can be downloaded from Google Drive:
+
+- [Download pretrained weights](https://drive.google.com/drive/folders/1r3iGSDQlJO31yGNGg7a60zrTYN_RfsRu?usp=sharing)
+
+After downloading, place the checkpoint file in the appropriate directory before evaluation or inference.
