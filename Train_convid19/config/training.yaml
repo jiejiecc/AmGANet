@@ -1,0 +1,40 @@
+TRAIN:
+  train_batch_size: 32
+  lr: 0.0003
+  valid_batch_size: 8
+  image_size: [224,224]
+
+  min_epochs: 30
+  max_epochs: 500
+  patience: 200
+  model_name: AmGANet
+  task_name: Covid19_CT
+  # task_name: Covid19_X
+  device: 1
+  save_vis: True
+
+
+DATA:
+# Covid19_X
+  # train_csv_path: /home/y1408/CAI/third_paper/AmGANet/datasets/Covid19_X/train.csv
+  # train_root_path: /home/y1408/CAI/third_paper/AmGANet/datasets/Covid19_X/train_val
+
+
+  # test_csv_path: /home/y1408/CAI/third_paper/AmGANet/datasets/Covid19_X/test.csv
+  # test_root_path: /home/y1408/CAI/third_paper/AmGANet/datasets/Covid19_X/Test_Folder
+
+# Covid19_CT
+  train_csv_path: ./datasets/Covid19_CT/Train_Folder/train.csv
+  train_root_path: ./datasets/Covid19_CT/Train_Folder
+
+  val_csv_path: ./datasets/Covid19_CT/Val_Folder/val.csv
+  val_root_path: ./datasets/Covid19_CT/Val_Folder
+
+  test_csv_path: ./datasets/Covid19_CT/Test_Folder/test.csv
+  test_root_path: ./datasets/Covid19_CT/Test_Folder
+
+
+
+
+
+

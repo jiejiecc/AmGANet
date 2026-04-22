@@ -1,0 +1,90 @@
+AmGANet
+Created a temporary directory at /tmp/tmpicnt3hr2
+Writing /tmp/tmpicnt3hr2/_remote_module_non_scriptable.py
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /microsoft/BiomedCLIP-PubMedBERT_256-vit_base_patch16_224/resolve/main/open_clip_pytorch_model.bin (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1017)')))"), '(Request ID: d5ae0cc2-eec2-406f-aedd-ecb3cb341203)')' thrown while requesting HEAD https://huggingface.co/microsoft/BiomedCLIP-PubMedBERT_256-vit_base_patch16_224/resolve/main/open_clip_pytorch_model.bin
+Retrying in 1s [Retry 1/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /microsoft/BiomedCLIP-PubMedBERT_256-vit_base_patch16_224/resolve/main/open_clip_config.json (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1017)')))"), '(Request ID: 38050b9e-6564-4ff3-9766-83d22e162542)')' thrown while requesting HEAD https://huggingface.co/microsoft/BiomedCLIP-PubMedBERT_256-vit_base_patch16_224/resolve/main/open_clip_config.json
+Retrying in 1s [Retry 1/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /microsoft/BiomedCLIP-PubMedBERT_256-vit_base_patch16_224/resolve/main/open_clip_config.json (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1017)')))"), '(Request ID: 1f5369e4-1945-41f8-a047-ce431b4d6624)')' thrown while requesting HEAD https://huggingface.co/microsoft/BiomedCLIP-PubMedBERT_256-vit_base_patch16_224/resolve/main/open_clip_config.json
+Retrying in 2s [Retry 2/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /api/resolve-cache/models/microsoft/BiomedCLIP-PubMedBERT_256-vit_base_patch16_224/9f341de24bfb00180f1b847274256e9b65a3a32e/open_clip_config.json (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1017)')))"), '(Request ID: 73254b1c-a906-471d-81c7-6610d9c152ee)')' thrown while requesting HEAD https://huggingface.co/api/resolve-cache/models/microsoft/BiomedCLIP-PubMedBERT_256-vit_base_patch16_224/9f341de24bfb00180f1b847274256e9b65a3a32e/open_clip_config.json
+Retrying in 1s [Retry 1/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /api/resolve-cache/models/microsoft/BiomedCLIP-PubMedBERT_256-vit_base_patch16_224/9f341de24bfb00180f1b847274256e9b65a3a32e/open_clip_config.json (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1017)')))"), '(Request ID: 078ca7e2-d4b2-4dfd-8503-50bde773bbd5)')' thrown while requesting HEAD https://huggingface.co/api/resolve-cache/models/microsoft/BiomedCLIP-PubMedBERT_256-vit_base_patch16_224/9f341de24bfb00180f1b847274256e9b65a3a32e/open_clip_config.json
+Retrying in 2s [Retry 2/5].
+Loaded hf-hub:microsoft/BiomedCLIP-PubMedBERT_256-vit_base_patch16_224 model config.
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract/resolve/main/config.json (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1017)')))"), '(Request ID: 34bfbd27-6f2a-4333-a0af-d14380ef8927)')' thrown while requesting HEAD https://huggingface.co/microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract/resolve/main/config.json
+Retrying in 1s [Retry 1/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract/resolve/main/config.json (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1017)')))"), '(Request ID: 8f0e0b88-c28d-466c-9e20-2dbf0cf7ccff)')' thrown while requesting HEAD https://huggingface.co/microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract/resolve/main/config.json
+Retrying in 2s [Retry 2/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /api/resolve-cache/models/microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract/d673b8835373c6fa116d6d8006b33d48734e305d/config.json (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1017)')))"), '(Request ID: 1d6380e9-2960-4cbf-9633-89be04b3428c)')' thrown while requesting HEAD https://huggingface.co/api/resolve-cache/models/microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract/d673b8835373c6fa116d6d8006b33d48734e305d/config.json
+Retrying in 1s [Retry 1/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /api/resolve-cache/models/microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract/d673b8835373c6fa116d6d8006b33d48734e305d/config.json (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1017)')))"), '(Request ID: 6e4293f8-176e-453f-9148-fea29d0134a9)')' thrown while requesting HEAD https://huggingface.co/api/resolve-cache/models/microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract/d673b8835373c6fa116d6d8006b33d48734e305d/config.json
+Retrying in 2s [Retry 2/5].
+AmGANet
+Created a temporary directory at /tmp/tmpld64wyeg
+Writing /tmp/tmpld64wyeg/_remote_module_non_scriptable.py
+Loaded hf-hub:microsoft/BiomedCLIP-PubMedBERT_256-vit_base_patch16_224 model config.
+Loading pretrained hf-hub:microsoft/BiomedCLIP-PubMedBERT_256-vit_base_patch16_224 weights (/home/y1408/.cache/huggingface/hub/models--microsoft--BiomedCLIP-PubMedBERT_256-vit_base_patch16_224/snapshots/9f341de24bfb00180f1b847274256e9b65a3a32e/open_clip_pytorch_model.bin).
+log dir: Kvasir/AmGANet/Test_session_04.18_23h14/tensorboard_logs/
+
+========= Epoch [1/2001] =========
+Test_session_04.18_23h14
+Training with batch size : 24
+   [Train] Epoch: [1][1/34]  Loss:0.718 (Avg 0.7180) IoU:0.134 (Avg 0.1343) Dice:0.2306 (Avg 0.2306) LR 3.00e-04   (AvgTime 1.7)   
+   [Train] Epoch: [1][2/34]  Loss:0.628 (Avg 0.6728) IoU:0.225 (Avg 0.1794) Dice:0.3430 (Avg 0.2868) LR 3.00e-04   (AvgTime 1.3)   
+   [Train] Epoch: [1][3/34]  Loss:0.572 (Avg 0.6391) IoU:0.221 (Avg 0.1932) Dice:0.3508 (Avg 0.3082) LR 3.00e-04   (AvgTime 1.1)   
+   [Train] Epoch: [1][4/34]  Loss:0.573 (Avg 0.6226) IoU:0.231 (Avg 0.2025) Dice:0.3476 (Avg 0.3180) LR 3.00e-04   (AvgTime 1.0)   
+   [Train] Epoch: [1][5/34]  Loss:0.524 (Avg 0.6029) IoU:0.279 (Avg 0.2178) Dice:0.4067 (Avg 0.3358) LR 3.00e-04   (AvgTime 1.0)   
+   [Train] Epoch: [1][6/34]  Loss:0.493 (Avg 0.5847) IoU:0.384 (Avg 0.2454) Dice:0.5311 (Avg 0.3683) LR 3.00e-04   (AvgTime 0.9)   
+   [Train] Epoch: [1][7/34]  Loss:0.431 (Avg 0.5627) IoU:0.449 (Avg 0.2745) Dice:0.5938 (Avg 0.4005) LR 3.00e-04   (AvgTime 0.9)   
+   [Train] Epoch: [1][8/34]  Loss:0.465 (Avg 0.5505) IoU:0.323 (Avg 0.2806) Dice:0.4467 (Avg 0.4063) LR 3.00e-04   (AvgTime 0.9)   
+   [Train] Epoch: [1][9/34]  Loss:0.464 (Avg 0.5409) IoU:0.348 (Avg 0.2880) Dice:0.4757 (Avg 0.4140) LR 3.00e-04   (AvgTime 0.9)   
+   [Train] Epoch: [1][10/34]  Loss:0.405 (Avg 0.5273) IoU:0.458 (Avg 0.3050) Dice:0.6038 (Avg 0.4330) LR 3.00e-04   (AvgTime 0.9)   
+   [Train] Epoch: [1][11/34]  Loss:0.448 (Avg 0.5201) IoU:0.381 (Avg 0.3119) Dice:0.5315 (Avg 0.4419) LR 3.00e-04   (AvgTime 0.8)   
+   [Train] Epoch: [1][12/34]  Loss:0.462 (Avg 0.5152) IoU:0.414 (Avg 0.3204) Dice:0.5537 (Avg 0.4513) LR 3.00e-04   (AvgTime 0.8)   
+   [Train] Epoch: [1][13/34]  Loss:0.415 (Avg 0.5075) IoU:0.385 (Avg 0.3254) Dice:0.5321 (Avg 0.4575) LR 3.00e-04   (AvgTime 0.8)   
+   [Train] Epoch: [1][14/34]  Loss:0.337 (Avg 0.4953) IoU:0.505 (Avg 0.3382) Dice:0.6329 (Avg 0.4700) LR 3.00e-04   (AvgTime 0.8)   
+   [Train] Epoch: [1][15/34]  Loss:0.421 (Avg 0.4904) IoU:0.472 (Avg 0.3472) Dice:0.6176 (Avg 0.4798) LR 3.00e-04   (AvgTime 0.8)   
+   [Train] Epoch: [1][16/34]  Loss:0.288 (Avg 0.4777) IoU:0.551 (Avg 0.3599) Dice:0.6941 (Avg 0.4932) LR 3.00e-04   (AvgTime 0.8)   
+   [Train] Epoch: [1][17/34]  Loss:0.302 (Avg 0.4674) IoU:0.608 (Avg 0.3745) Dice:0.7400 (Avg 0.5078) LR 3.00e-04   (AvgTime 0.8)   
+   [Train] Epoch: [1][18/34]  Loss:0.413 (Avg 0.4644) IoU:0.500 (Avg 0.3815) Dice:0.6270 (Avg 0.5144) LR 3.00e-04   (AvgTime 0.8)   
+   [Train] Epoch: [1][19/34]  Loss:0.270 (Avg 0.4541) IoU:0.592 (Avg 0.3925) Dice:0.7287 (Avg 0.5257) LR 3.00e-04   (AvgTime 0.8)   
+   [Train] Epoch: [1][20/34]  Loss:0.367 (Avg 0.4498) IoU:0.501 (Avg 0.3980) Dice:0.6441 (Avg 0.5316) LR 3.00e-04   (AvgTime 0.8)   
+   [Train] Epoch: [1][21/34]  Loss:0.315 (Avg 0.4434) IoU:0.514 (Avg 0.4035) Dice:0.6418 (Avg 0.5368) LR 3.00e-04   (AvgTime 0.8)   
+   [Train] Epoch: [1][22/34]  Loss:0.294 (Avg 0.4366) IoU:0.586 (Avg 0.4118) Dice:0.7229 (Avg 0.5453) LR 3.00e-04   (AvgTime 0.8)   
+   [Train] Epoch: [1][23/34]  Loss:0.382 (Avg 0.4342) IoU:0.520 (Avg 0.4165) Dice:0.6495 (Avg 0.5498) LR 3.00e-04   (AvgTime 0.8)   
+   [Train] Epoch: [1][24/34]  Loss:0.343 (Avg 0.4304) IoU:0.551 (Avg 0.4221) Dice:0.6696 (Avg 0.5548) LR 3.00e-04   (AvgTime 0.8)   
+   [Train] Epoch: [1][25/34]  Loss:0.297 (Avg 0.4251) IoU:0.498 (Avg 0.4252) Dice:0.6274 (Avg 0.5577) LR 3.00e-04   (AvgTime 0.8)   
+   [Train] Epoch: [1][26/34]  Loss:0.308 (Avg 0.4206) IoU:0.536 (Avg 0.4294) Dice:0.6754 (Avg 0.5622) LR 3.00e-04   (AvgTime 0.8)   
+   [Train] Epoch: [1][27/34]  Loss:0.353 (Avg 0.4181) IoU:0.565 (Avg 0.4345) Dice:0.6811 (Avg 0.5666) LR 3.00e-04   (AvgTime 0.8)   
+   [Train] Epoch: [1][28/34]  Loss:0.359 (Avg 0.4160) IoU:0.566 (Avg 0.4392) Dice:0.6707 (Avg 0.5704) LR 3.00e-04   (AvgTime 0.8)   
+   [Train] Epoch: [1][29/34]  Loss:0.281 (Avg 0.4113) IoU:0.571 (Avg 0.4437) Dice:0.7055 (Avg 0.5750) LR 3.00e-04   (AvgTime 0.8)   
+   [Train] Epoch: [1][30/34]  Loss:0.349 (Avg 0.4093) IoU:0.473 (Avg 0.4447) Dice:0.6080 (Avg 0.5761) LR 3.00e-04   (AvgTime 0.8)   
+   [Train] Epoch: [1][31/34]  Loss:0.335 (Avg 0.4069) IoU:0.454 (Avg 0.4450) Dice:0.5767 (Avg 0.5761) LR 3.00e-04   (AvgTime 0.8)   
+   [Train] Epoch: [1][32/34]  Loss:0.347 (Avg 0.4050) IoU:0.518 (Avg 0.4473) Dice:0.6452 (Avg 0.5783) LR 3.00e-04   (AvgTime 0.8)   
+   [Train] Epoch: [1][33/34]  Loss:0.241 (Avg 0.4000) IoU:0.659 (Avg 0.4537) Dice:0.7791 (Avg 0.5844) LR 3.00e-04   (AvgTime 0.8)   
+   [Train] Epoch: [1][34/34]  Loss:0.164 (Avg 0.3977) IoU:0.659 (Avg 0.4558) Dice:0.7460 (Avg 0.5860) LR 3.00e-04   (AvgTime 0.8)   
+Train time for epoch 1: 00:00:26 (26.41s)
+Validation
+   [Val] Epoch: [1][1/5]  Loss:0.301 (Avg 0.3009) IoU:0.642 (Avg 0.6419) Dice:0.7489 (Avg 0.7489) (AvgTime 0.7)   
+   [Val] Epoch: [1][2/5]  Loss:0.344 (Avg 0.3226) IoU:0.679 (Avg 0.6602) Dice:0.7832 (Avg 0.7660) (AvgTime 0.5)   
+   [Val] Epoch: [1][3/5]  Loss:0.359 (Avg 0.3347) IoU:0.615 (Avg 0.6452) Dice:0.7349 (Avg 0.7557) (AvgTime 0.4)   
+   [Val] Epoch: [1][4/5]  Loss:0.252 (Avg 0.3139) IoU:0.675 (Avg 0.6527) Dice:0.7785 (Avg 0.7614) (AvgTime 0.4)   
+   [Val] Epoch: [1][5/5]  Loss:0.636 (Avg 0.3268) IoU:0.626 (Avg 0.6516) Dice:0.7251 (Avg 0.7599) (AvgTime 0.4)   
+Val time for epoch 1: 00:00:01 (1.91s)
+Total epoch 1 time: 00:00:28 (28.33s)
+	 early_stopping_count: 0/500
+
+========= Epoch [2/2001] =========
+Test_session_04.18_23h14
+Training with batch size : 24
+   [Train] Epoch: [2][1/34]  Loss:0.280 (Avg 0.2797) IoU:0.672 (Avg 0.6718) Dice:0.7804 (Avg 0.7804) LR 3.00e-04   (AvgTime 1.1)   
+   [Train] Epoch: [2][2/34]  Loss:0.324 (Avg 0.3020) IoU:0.644 (Avg 0.6581) Dice:0.7612 (Avg 0.7708) LR 3.00e-04   (AvgTime 0.9)   
+   [Train] Epoch: [2][3/34]  Loss:0.319 (Avg 0.3077) IoU:0.573 (Avg 0.6299) Dice:0.7035 (Avg 0.7484) LR 3.00e-04   (AvgTime 0.9)   
+   [Train] Epoch: [2][4/34]  Loss:0.261 (Avg 0.2959) IoU:0.511 (Avg 0.6001) Dice:0.6587 (Avg 0.7260) LR 3.00e-04   (AvgTime 0.8)   
+   [Train] Epoch: [2][5/34]  Loss:0.288 (Avg 0.2943) IoU:0.495 (Avg 0.5791) Dice:0.6331 (Avg 0.7074) LR 3.00e-04   (AvgTime 0.8)   
+   [Train] Epoch: [2][6/34]  Loss:0.235 (Avg 0.2845) IoU:0.587 (Avg 0.5804) Dice:0.7062 (Avg 0.7072) LR 3.00e-04   (AvgTime 0.8)   
+   [Train] Epoch: [2][7/34]  Loss:0.192 (Avg 0.2713) IoU:0.736 (Avg 0.6027) Dice:0.8252 (Avg 0.7240) LR 3.00e-04   (AvgTime 0.8)   
+   [Train] Epoch: [2][8/34]  Loss:0.333 (Avg 0.2790) IoU:0.679 (Avg 0.6123) Dice:0.7952 (Avg 0.7329) LR 3.00e-04   (AvgTime 0.8)   
+   [Train] Epoch: [2][9/34]  Loss:0.273 (Avg 0.2784) IoU:0.625 (Avg 0.6137) Dice:0.7412 (Avg 0.7339) LR 3.00e-04   (AvgTime 0.8)   
+   [Train] Epoch: [2][10/34]  Loss:0.270 (Avg 0.2776) IoU:0.562 (Avg 0.6085) Dice:0.6876 (Avg 0.7292) LR 3.00e-04   (AvgTime 0.8)   

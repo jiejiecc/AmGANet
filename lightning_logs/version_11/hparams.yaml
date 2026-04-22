@@ -1,0 +1,22 @@
+args: !!python/object/new:config_Covid19.CfgNode
+  dictitems:
+    device: 1
+    image_size:
+    - 224
+    - 224
+    lr: 0.0003
+    max_epochs: 500
+    min_epochs: 30
+    model_name: AmGANet
+    patience: 200
+    save_vis: true
+    task_name: Covid19_CT
+    test_csv_path: ./datasets/Covid19_CT/Test_Folder/test.csv
+    test_root_path: ./datasets/Covid19_CT/Test_Folder
+    train_batch_size: 32
+    train_csv_path: ./datasets/Covid19_CT/Train_Folder/train.csv
+    train_root_path: ./datasets/Covid19_CT/Train_Folder
+    val_csv_path: ./datasets/Covid19_CT/Val_Folder/val.csv
+    val_root_path: ./datasets/Covid19_CT/Val_Folder
+    valid_batch_size: 8
+task_name: Covid19_CT
