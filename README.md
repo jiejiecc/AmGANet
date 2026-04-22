@@ -9,14 +9,14 @@ Official implementation of **AmGANet**.
 > If the manuscript is accepted for publication, this repository and any related materials will be updated to reflect the final publication information and applicable sharing policies.
 
 ## Overview
-![main figure](assets\3D.png)
+![main figure](assets/3D.png)
 > **<p align="justify"> Abstract:** *Medical text has recently been introduced into medical image segmentation to incorporate expert knowledge and alleviate the limitations of purely vision-based models. However, existing methods often rely on paired image-text inputs and underexploit attribute-level spatial cues, resulting in insufficient geometric guidance and limited cross-modal interaction. To address these issues, we propose the Attribute-Modulated Geometric Alignment Language-guided Attention Network (AmGANet). Specifically, the Instance-Aware Cross-Modal Adaptation module enables structured semantic guidance without requiring paired image-text inputs at inference time through task-aware visual adaptation, image-conditioned textual modulation, and decoupled retrieval of lesion count and location attributes. Meanwhile, the proposed Attribute-Modulated Geometric Alignment Attention transforms attribute-level textual priors into a global affine field and adaptively incorporates it into image-driven local deformation modeling for more accurate spatial localization. In addition, a Synergistic Semantic Decoding Block hierarchically refines semantic and spatial representations through bidirectional modulation, promoting deeper visual-textual alignment and more effective cross-modal interaction. Experiments on four public datasets demonstrate the effectiveness of AmGANet and its strong and consistent performance over existing methods.* </p>
 
 
 ## Method
  
 <p float="left">
-  <img src="assets\overview.png" width="100%" />
+  <img src="assets/overview.png" width="100%" />
 </p>
 
 1) **a novel Attribute-Level Language-Guided Medical Image Segmentation framework**: The method overcomes the rigid constraints of conventional static image-text pairing, achieving instance-aware dynamic adaptation of textual guidance and explicit geometric alignment of lesions, thereby fundamentally addressing the limitations of textual flexibility and spatial geometric localization in multimodal segmentation.
